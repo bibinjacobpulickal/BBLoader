@@ -11,7 +11,7 @@ public extension BBLoader {
         }
     }
 
-    var textColor: UIColor {
+    var textColor: UIColor? {
         set {
             titleTextColor   = newValue
             messageTextColor = newValue
@@ -21,14 +21,15 @@ public extension BBLoader {
         }
     }
 
-    var titleTextColor: UIColor {
+    var titleTextColor: UIColor? {
         set {
-            let attributedTitle = NSAttributedString(string: title ?? "", attributes: [.foregroundColor: newValue])
+            guard let foregroundColor = newValue else { return }
+            let attributedTitle = NSAttributedString(string: title ?? "", attributes: [.foregroundColor: foregroundColor])
             setValue(attributedTitle, forKey: "attributedTitle")
         }
         get {
             let attributedTitle = value(forKey: "attributedTitle") as? NSAttributedString
-            var color = UIColor.clear
+            var color: UIColor?
             for (key, value) in attributedTitle?.attributes(at: 0, effectiveRange: nil) ?? [:] {
                 if key == .foregroundColor, let value = value as? UIColor {
                     color = value
@@ -38,14 +39,15 @@ public extension BBLoader {
         }
     }
 
-    var messageTextColor: UIColor {
+    var messageTextColor: UIColor? {
         set {
-            let attributedMessage = NSAttributedString(string: message ?? "", attributes: [.foregroundColor: newValue])
+            guard let foregroundColor = newValue else { return }
+            let attributedMessage = NSAttributedString(string: message ?? "", attributes: [.foregroundColor: foregroundColor])
             setValue(attributedMessage, forKey: "attributedMessage")
         }
         get {
             let attributedMessage = value(forKey: "attributedMessage") as? NSAttributedString
-            var color = UIColor.clear
+            var color: UIColor?
             for (key, value) in attributedMessage?.attributes(at: 0, effectiveRange: nil) ?? [:] {
                 if key == .foregroundColor, let value = value as? UIColor {
                     color = value
@@ -64,9 +66,10 @@ public extension BBLoader {
         }
     }
 
-    var loadingIndicatorColor: UIColor {
+    var loadingIndicatorColor: UIColor? {
         set {
-            loadingIndicator.color = newValue
+            guard let loadingIndicatorColor = newValue else { return }
+            loadingIndicator.color = loadingIndicatorColor
         }
         get {
             loadingIndicator.color
