@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		EFC22433246E995F007830D4 /* BBLoaderHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */; };
+		EFC22435246E99B1007830D4 /* BBPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22434246E99B1007830D4 /* BBPresentable.swift */; };
 		OBJ_24 /* BBLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BBLoader.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* BBLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* BBLoaderTests.swift */; };
@@ -50,6 +51,7 @@
 		"BBLoader::BBLoader::Product" /* BBLoader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BBLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"BBLoader::BBLoaderTests::Product" /* BBLoaderTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = BBLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderHelpers.swift; sourceTree = "<group>"; };
+		EFC22434246E99B1007830D4 /* BBPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBPresentable.swift; sourceTree = "<group>"; };
 		OBJ_12 /* BBLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* BBLoader */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BBLoader; sourceTree = SOURCE_ROOT; };
@@ -129,6 +131,7 @@
 			children = (
 				OBJ_9 /* BBLoader.swift */,
 				EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */,
+				EFC22434246E99B1007830D4 /* BBPresentable.swift */,
 			);
 			name = BBLoader;
 			path = Sources/BBLoader;
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				EFC22435246E99B1007830D4 /* BBPresentable.swift in Sources */,
 				EFC22433246E995F007830D4 /* BBLoaderHelpers.swift in Sources */,
 				OBJ_24 /* BBLoader.swift in Sources */,
 			);
