@@ -8,7 +8,7 @@
 import UIKit
 
 enum Color: String, CaseIterable {
-    case none, white, black, red, yellow, green, purple
+    case none, white, black, red, yellow, green, purple, random
 
     var color: UIColor? {
         switch self {
@@ -19,6 +19,7 @@ enum Color: String, CaseIterable {
         case .yellow: return .yellow
         case .green: return .green
         case .purple: return .purple
+        case .random: return .random
         }
     }
 }
