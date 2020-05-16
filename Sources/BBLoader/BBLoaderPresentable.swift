@@ -1,21 +1,21 @@
 import UIKit
 
-public protocol BBPresentable {
+public protocol BBLoaderPresentable {
 
     func present(_ viewControllerToPresent: UIViewController, completion: (() -> Void)?)
     func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)?)
 }
 
-extension UIViewController: BBPresentable { }
+extension UIViewController: BBLoaderPresentable { }
 
-extension BBPresentable {
+extension BBLoaderPresentable {
 
     public func present(_ viewControllerToPresent: UIViewController, completion: (() -> Void)?) {
         present(viewControllerToPresent, animated: true, completion: completion)
     }
 }
 
-extension BBPresentable {
+extension BBLoaderPresentable {
 
     public func presentLoader(setup: ((BBLoader) -> Void)? = nil, completion: ((BBLoader) -> Void)? = nil) {
 
