@@ -1,8 +1,10 @@
 import UIKit
 
-public class BBLoader: UIAlertController {
+public typealias BBLoader = UIAlertController
 
-    let loadingIndicator = UIActivityIndicatorView()
+public extension BBLoader {
+
+    static let loadingIndicator = UIActivityIndicatorView()
 
     convenience init(title: String = "", message: String = "") {
         self.init(title: title, message: message, preferredStyle: .alert)
@@ -11,6 +13,7 @@ public class BBLoader: UIAlertController {
     }
 
     private func setupLoadingIndicator() {
+        let loadingIndicator = BBLoader.loadingIndicator
         if #available(iOS 13.0, tvOS 13.0, *) {
             loadingIndicator.style            = .large
         } else {

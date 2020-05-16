@@ -59,20 +59,20 @@ public extension BBLoader {
 
     var loadingIndicatorStyle: UIActivityIndicatorView.Style {
         set {
-            loadingIndicator.style = newValue
+            BBLoader.loadingIndicator.style = newValue
         }
         get {
-            loadingIndicator.style
+            BBLoader.loadingIndicator.style
         }
     }
 
     var loadingIndicatorColor: UIColor? {
         set {
             guard let loadingIndicatorColor = newValue else { return }
-            loadingIndicator.color = loadingIndicatorColor
+            BBLoader.loadingIndicator.color = loadingIndicatorColor
         }
         get {
-            loadingIndicator.color
+            BBLoader.loadingIndicator.color
         }
     }
 
