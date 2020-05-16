@@ -75,7 +75,7 @@ class ViewController: UITableViewController {
     }
 
     @objc private func presentLoader() {
-        presentLoader(setup: { loader in
+        presentBBLoader(setup: { loader in
             loader.title                 = self.selectedTitleText
             loader.message               = self.selectedMessageText
             loader.backgroundColor       = Color.allCases[self.selectedBackgroundColorIndex].color

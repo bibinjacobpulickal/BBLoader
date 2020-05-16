@@ -17,7 +17,7 @@ extension BBLoaderPresentable {
 
 extension BBLoaderPresentable {
 
-    public func presentLoader(setup: ((BBLoader) -> Void)? = nil, completion: ((BBLoader) -> Void)? = nil) {
+    public func presentBBLoader(setup: ((BBLoader) -> Void)? = nil, completion: ((BBLoader) -> Void)? = nil) {
 
         let loader = BBLoader(title: "Loading", message: "Please wait...")
 
