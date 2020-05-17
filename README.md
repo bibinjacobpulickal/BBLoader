@@ -1,6 +1,6 @@
 # BBLoader
 
-Make awesome minimal loading animation with text using BBLoader. BBLoader is a light-weight minimal looking loading animation popup build on top of UIKit for iOS and tvOS. This also, disables user interaction while the contents are being loaded asynchronously. Package is compiled using Xcode 11.0 on MacOS 10.15 using Swift 5.1
+Make awesome minimal loading animation with text using BBLoader. BBLoader is a light-weight minimal looking loading animation popup build on top of UIKit for iOS and tvOS. This also, disables user interaction while the contents are being loaded asynchronously. Package is compiled using Xcode 11.0 on MacOS 10.15 using Swift 5.2.2 compiler.
 
 ---
 
@@ -8,7 +8,7 @@ Make awesome minimal loading animation with text using BBLoader. BBLoader is a l
 ![Platform](https://img.shields.io/badge/Platform-iOS%20|%20tvOS-blue.svg?style=flat)
 [![iOS](https://img.shields.io/badge/iOS-8.0+-green.svg?style=flat)](https://www.apple.com/in/macos/catalina/)
 [![Xcode](https://img.shields.io/badge/XCode-11.4-blue.svg)](https://developer.apple.com/xcode/)
-[![Swift](https://img.shields.io/badge/Swift-5.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift](https://img.shields.io/badge/Swift-5.2.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 ---
 ## Code
@@ -38,8 +38,8 @@ class ViewController: UIViewController {
 <table>
   <tr>
     <td>Animation</td>
-     <td>Dark</td>
-     <td>Light</td>
+     <td>Dark mode</td>
+     <td>Light mode</td>
   </tr>
   <tr>
     <td><img src="Screenshots/BBLoader.gif" width=300 height=600></td>
