@@ -75,17 +75,13 @@ class ViewController: UITableViewController {
     }
 
     @objc private func presentLoader() {
-        presentBBLoader(setup: { loader in
+        presentBBLoader(duration: 2, setup: { loader in
             loader.title                 = self.selectedTitleText
             loader.message               = self.selectedMessageText
             loader.backgroundColor       = Color.allCases[self.selectedBackgroundColorIndex].color
             loader.textColor             = Color.allCases[self.selectedTextColorIndex].color
             loader.loadingIndicatorColor = Color.allCases[self.selectedIndicatorColorIndex].color
-        }) { loader in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                loader.dismiss()
-            }
-        }
+        })
     }
 }
 
