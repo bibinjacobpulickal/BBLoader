@@ -2,18 +2,14 @@
 
 Make awesome minimal loading animation with text using BBLoader. BBLoader is a light-weight minimal looking loading animation popup build on top of UIKit for iOS and tvOS. This also, disables user interaction while the contents are being loaded asynchronously. Package is compiled using Xcode 11.0 on MacOS 10.15 using Swift 5.2.2 compiler.
 
----
-
 ## Support
----
+
 ![Platform](https://img.shields.io/badge/Platform-iOS%20|%20tvOS-blue.svg?style=flat)
 [![iOS](https://img.shields.io/badge/iOS-8.0+-green.svg?style=flat)](https://www.apple.com/in/macos/catalina/)
 [![Xcode](https://img.shields.io/badge/XCode-11.4-blue.svg)](https://developer.apple.com/xcode/)
 [![Swift](https://img.shields.io/badge/Swift-5.2.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
----
 ## Code
----
 
 ```swift
 import UIKit
@@ -38,7 +34,7 @@ class ViewController: UIViewController {
     }
 }
 ```
----
+
 ## Screenshots
 
 <table>
@@ -54,7 +50,6 @@ class ViewController: UIViewController {
   </tr>
  </table>
 
- ---
  ## Installation
 
  ### Swift Package Manager
@@ -70,9 +65,9 @@ dependencies: [
 ```
 
 ## Example
----
+
 Clone or download the project. Open `.xcodeproj` file using supported Xcode. Change target to iOSExample and run on a device or simulator.
 
 ## License
----
+
 BBLoader is released under the MIT license. [See LICENSE](https://github.com/bibinjacobpulickal/BBLoader/blob/master/LICENSE) for details.
