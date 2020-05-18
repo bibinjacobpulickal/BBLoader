@@ -5,6 +5,7 @@ Make awesome minimal loading animation with text using BBLoader. BBLoader is a l
 ---
 
 ## Support
+---
 ![Platform](https://img.shields.io/badge/Platform-iOS%20|%20tvOS-blue.svg?style=flat)
 [![iOS](https://img.shields.io/badge/iOS-8.0+-green.svg?style=flat)](https://www.apple.com/in/macos/catalina/)
 [![Xcode](https://img.shields.io/badge/XCode-11.4-blue.svg)](https://developer.apple.com/xcode/)
@@ -12,6 +13,7 @@ Make awesome minimal loading animation with text using BBLoader. BBLoader is a l
 
 ---
 ## Code
+---
 
 ```swift
 import UIKit
@@ -21,19 +23,23 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        presentLoader(setup: { loader in
+        
+        presentBBLoader(duration: 30, setup: { loader in
             loader.title                 = "Loading"
             loader.message               = "Please wait..."
             loader.backgroundColor       = .black
             loader.textColor             = .red
             loader.loadingIndicatorColor = .red
-        })
+        }) { loader in
+            URLSession.shared.dataTask(with: URL(string: "https://www.yoururl.com")!) { _,_,_  in
+                loader.dismiss()
+            }.resume()
+        }
     }
 }
 ```
 ---
-## Working Example
+## Screenshots
 
 <table>
   <tr>
@@ -53,9 +59,9 @@ class ViewController: UIViewController {
 
  ### Swift Package Manager
 
-The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but Alamofire does support its use on supported platforms.
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but BBLoader does support its use on supported platforms.
 
-Once you have your Swift package set up, adding Alamofire as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+Once you have your Swift package set up, adding BBLoader as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
 
 ```swift
 dependencies: [
@@ -63,7 +69,10 @@ dependencies: [
 ]
 ```
 
+## Example
 ---
-## License
+Clone or download the project. Open `.xcodeproj` file using supported Xcode. Change target to iOSExample and run on a device or simulator.
 
+## License
+---
 BBLoader is released under the MIT license. [See LICENSE](https://github.com/bibinjacobpulickal/BBLoader/blob/master/LICENSE) for details.
