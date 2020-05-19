@@ -1,19 +1,7 @@
 import UIKit
+import BBAlert
 
-public protocol BBLoaderPresentable {
-
-    func present(_ viewControllerToPresent: UIViewController, completion: (() -> Void)?)
-    func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)?)
-}
-
-extension UIViewController: BBLoaderPresentable { }
-
-extension BBLoaderPresentable {
-
-    public func present(_ viewControllerToPresent: UIViewController, completion: (() -> Void)?) {
-        present(viewControllerToPresent, animated: true, completion: completion)
-    }
-}
+protocol BBLoaderPresentable: BBAlertPresentable { }
 
 extension BBLoaderPresentable {
 
