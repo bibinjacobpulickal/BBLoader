@@ -1,9 +1,7 @@
 import UIKit
 import BBAlert
 
-protocol BBLoaderPresentable: BBAlertPresentable { }
-
-extension BBLoaderPresentable {
+extension BBAlertPresentable {
 
     public func presentBBLoader(duration: Double = 0, setup: ((BBLoader) -> Void)? = nil, completion: ((BBLoader) -> Void)? = nil) {
 
