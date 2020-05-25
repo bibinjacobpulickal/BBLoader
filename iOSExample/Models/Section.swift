@@ -8,5 +8,5 @@
 import Foundation
 
 enum Section: String, CaseIterable {
-    case texts, backgroundColor, textColor, indicatorColor
+    case texts, backgroundColor, titleTextColor, messageTextColor, indicatorColor
 }

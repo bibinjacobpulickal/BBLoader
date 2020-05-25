@@ -13,9 +13,10 @@ class ViewController: UITableViewController {
     var selectedTitleText: String?   = "Loading"
     var selectedMessageText: String? = "Please wait..."
 
-    var selectedBackgroundColorIndex = 0
-    var selectedTextColorIndex       = 0
-    var selectedIndicatorColorIndex  = 0
+    var selectedBackgroundColorIndex  = 0
+    var selectedTitleTextColorIndex   = 0
+    var selectedMessageTextColorIndex = 0
+    var selectedIndicatorColorIndex   = 0
 
     override func loadView() {
         super.loadView()
@@ -56,8 +57,10 @@ class ViewController: UITableViewController {
         if indexPath.section == 1 {
             cell.accessoryType   = indexPath.row == selectedBackgroundColorIndex ? .checkmark : .none
         } else if indexPath.section == 2 {
-            cell.accessoryType   = indexPath.row == selectedTextColorIndex ? .checkmark : .none
+            cell.accessoryType   = indexPath.row == selectedTitleTextColorIndex ? .checkmark : .none
         } else if indexPath.section == 3 {
+            cell.accessoryType   = indexPath.row == selectedMessageTextColorIndex ? .checkmark : .none
+        } else if indexPath.section == 4 {
             cell.accessoryType   = indexPath.row == selectedIndicatorColorIndex ? .checkmark : .none
         }
         return cell
@@ -65,11 +68,13 @@ class ViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1 {
-            selectedBackgroundColorIndex = indexPath.row
+            selectedBackgroundColorIndex  = indexPath.row
         } else if indexPath.section == 2 {
-            selectedTextColorIndex = indexPath.row
+            selectedTitleTextColorIndex   = indexPath.row
         } else if indexPath.section == 3 {
-            selectedIndicatorColorIndex = indexPath.row
+            selectedMessageTextColorIndex = indexPath.row
+        } else if indexPath.section == 4 {
+            selectedIndicatorColorIndex   = indexPath.row
         }
         tableView.reloadData()
     }
@@ -79,7 +84,8 @@ class ViewController: UITableViewController {
             loader.title                 = self.selectedTitleText
             loader.message               = self.selectedMessageText
             loader.backgroundColor       = Color.allCases[self.selectedBackgroundColorIndex].color
-            loader.textColor             = Color.allCases[self.selectedTextColorIndex].color
+            loader.titleTextColor        = Color.allCases[self.selectedTitleTextColorIndex].color
+            loader.messageTextColor      = Color.allCases[self.selectedMessageTextColorIndex].color
             loader.loadingIndicatorColor = Color.allCases[self.selectedIndicatorColorIndex].color
         })
     }
