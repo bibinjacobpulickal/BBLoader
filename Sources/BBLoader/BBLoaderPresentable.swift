@@ -1,7 +1,24 @@
 import UIKit
-import BBAlert
 
-extension BBAlertPresentable {
+public protocol BBLoaderPresentable {
+
+    func present(_ viewControllerToPresent: UIViewController,
+                 completion: (() -> Void)?)
+    func present(_ viewControllerToPresent: UIViewController,
+                 animated flag: Bool,
+                 completion: (() -> Void)?)
+}
+
+extension UIViewController: BBLoaderPresentable { }
+
+extension BBLoaderPresentable {
+
+    public func present(_ viewControllerToPresent: UIViewController, completion: (() -> Void)? = nil) {
+        present(viewControllerToPresent, animated: true, completion: completion)
+    }
+}
+
+extension BBLoaderPresentable {
 
     public func presentBBLoader(duration: Double = 0, setup: ((BBLoader) -> Void)? = nil, completion: ((BBLoader) -> Void)? = nil) {
 
