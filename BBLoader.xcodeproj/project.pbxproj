@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		EF19831F247494D000EFBC69 /* BBAlert in Frameworks */ = {isa = PBXBuildFile; productRef = EF19831E247494D000EFBC69 /* BBAlert */; };
 		EF608759246EDCB30060E820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF608758246EDCB30060E820 /* AppDelegate.swift */; };
 		EF60875B246EDCB30060E820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF60875A246EDCB30060E820 /* SceneDelegate.swift */; };
 		EF60875D246EDCB30060E820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF60875C246EDCB30060E820 /* ViewController.swift */; };
@@ -31,6 +30,7 @@
 		EF608773246EF8970060E820 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF608772246EF8970060E820 /* TextFieldCell.swift */; };
 		EF608776246EF8C40060E820 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF608775246EF8C40060E820 /* Helpers.swift */; };
 		EF608779246EFADF0060E820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF608778246EFADF0060E820 /* LaunchScreen.storyboard */; };
+		EF65294C2504DA0F007E4969 /* BBAlert in Frameworks */ = {isa = PBXBuildFile; productRef = EF65294B2504DA0F007E4969 /* BBAlert */; };
 		EFC22433246E995F007830D4 /* BBLoaderHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */; };
 		EFC22435246E99B1007830D4 /* BBLoaderPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */; };
 		OBJ_24 /* BBLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BBLoader.swift */; };
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				EF19831F247494D000EFBC69 /* BBAlert in Frameworks */,
+				EF65294C2504DA0F007E4969 /* BBAlert in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +249,7 @@
 			);
 			name = BBLoader;
 			packageProductDependencies = (
-				EF19831E247494D000EFBC69 /* BBAlert */,
+				EF65294B2504DA0F007E4969 /* BBAlert */,
 			);
 			productName = BBLoader;
 			productReference = "BBLoader::BBLoader::Product" /* BBLoader.framework */;
@@ -330,7 +330,7 @@
 			);
 			mainGroup = OBJ_5;
 			packageReferences = (
-				EF19831D247494D000EFBC69 /* XCRemoteSwiftPackageReference "BBAlert" */,
+				EF65294A2504DA0F007E4969 /* XCRemoteSwiftPackageReference "BBAlert" */,
 			);
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
@@ -856,20 +856,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EF19831D247494D000EFBC69 /* XCRemoteSwiftPackageReference "BBAlert" */ = {
+		EF65294A2504DA0F007E4969 /* XCRemoteSwiftPackageReference "BBAlert" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:bibinjacobpulickal/BBAlert.git";
+			repositoryURL = "https://github.com/bibinjacobpulickal/BBAlert.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = BBKit/BBLoader;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EF19831E247494D000EFBC69 /* BBAlert */ = {
+		EF65294B2504DA0F007E4969 /* BBAlert */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EF19831D247494D000EFBC69 /* XCRemoteSwiftPackageReference "BBAlert" */;
+			package = EF65294A2504DA0F007E4969 /* XCRemoteSwiftPackageReference "BBAlert" */;
 			productName = BBAlert;
 		};
 /* End XCSwiftPackageProductDependency section */
