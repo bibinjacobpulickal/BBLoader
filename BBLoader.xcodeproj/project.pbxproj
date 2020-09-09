@@ -303,7 +303,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				EF60E2602509117100CC2922 /* PBXTargetDependency */,
 			);
 			name = BBLoader;
 			packageProductDependencies = (
@@ -469,10 +468,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EF60E2602509117100CC2922 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = EF60E25F2509117100CC2922 /* BBLayoutKit */;
-		};
 		OBJ_36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "BBLoader::BBLoaderTests" /* BBLoaderTests */;
@@ -946,11 +941,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EF60E25F2509117100CC2922 /* BBLayoutKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EFFE46FF2509034C00F5FBA5 /* XCRemoteSwiftPackageReference "BBLayoutKit" */;
-			productName = BBLayoutKit;
-		};
 		EFFE46FA2509029D00F5FBA5 /* BBAlert */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EFFE46F92509029D00F5FBA5 /* XCRemoteSwiftPackageReference "BBAlert" */;
