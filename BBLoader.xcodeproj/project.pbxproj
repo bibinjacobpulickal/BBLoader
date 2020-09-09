@@ -303,6 +303,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				EF6AE2EF25093F6400DAF91B /* PBXTargetDependency */,
+				EF6AE2ED25093F5800DAF91B /* PBXTargetDependency */,
 			);
 			name = BBLoader;
 			packageProductDependencies = (
@@ -468,6 +470,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EF6AE2ED25093F5800DAF91B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = EF6AE2EC25093F5800DAF91B /* BBLayoutKit */;
+		};
+		EF6AE2EF25093F6400DAF91B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = EF6AE2EE25093F6400DAF91B /* BBAlert */;
+		};
 		OBJ_36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "BBLoader::BBLoaderTests" /* BBLoaderTests */;
@@ -764,7 +774,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BBLoader.xcodeproj/BBLoaderTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@loader_path/../Frameworks",
@@ -844,7 +854,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BBLoader.xcodeproj/BBLoaderTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@loader_path/../Frameworks",
@@ -941,6 +951,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EF6AE2EC25093F5800DAF91B /* BBLayoutKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFFE46FF2509034C00F5FBA5 /* XCRemoteSwiftPackageReference "BBLayoutKit" */;
+			productName = BBLayoutKit;
+		};
+		EF6AE2EE25093F6400DAF91B /* BBAlert */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFFE46F92509029D00F5FBA5 /* XCRemoteSwiftPackageReference "BBAlert" */;
+			productName = BBAlert;
+		};
 		EFFE46FA2509029D00F5FBA5 /* BBAlert */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EFFE46F92509029D00F5FBA5 /* XCRemoteSwiftPackageReference "BBAlert" */;
