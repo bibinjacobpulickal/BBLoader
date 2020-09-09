@@ -31,6 +31,13 @@
 		EF608776246EF8C40060E820 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF608775246EF8C40060E820 /* Helpers.swift */; };
 		EF608779246EFADF0060E820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF608778246EFADF0060E820 /* LaunchScreen.storyboard */; };
 		EF65294C2504DA0F007E4969 /* BBAlert in Frameworks */ = {isa = PBXBuildFile; productRef = EF65294B2504DA0F007E4969 /* BBAlert */; };
+		EF65296F2508107B007E4969 /* BBLayoutKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF65296E2508107B007E4969 /* BBLayoutKit */; };
+		EF652972250810C1007E4969 /* BBLayoutKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF652971250810C1007E4969 /* BBLayoutKit */; };
+		EF6529742508D110007E4969 /* BBAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6529732508D110007E4969 /* BBAnimatable.swift */; };
+		EF6529762508D141007E4969 /* BBAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6529752508D141007E4969 /* BBAnimationType.swift */; };
+		EF6529782508D18D007E4969 /* BBAnimatedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6529772508D18D007E4969 /* BBAnimatedLoader.swift */; };
+		EF65297A2508D1B8007E4969 /* BBQuadRotatingSquaresToCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6529792508D1B8007E4969 /* BBQuadRotatingSquaresToCircles.swift */; };
+		EF65297C2508D202007E4969 /* BBRotatingAnimatingCubesHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65297B2508D202007E4969 /* BBRotatingAnimatingCubesHelpers.swift */; };
 		EFC22433246E995F007830D4 /* BBLoaderHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */; };
 		EFC22435246E99B1007830D4 /* BBLoaderPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */; };
 		OBJ_24 /* BBLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BBLoader.swift */; };
@@ -58,7 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		"BBLoader::BBLoader::Product" /* BBLoader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BBLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"BBLoader::BBLoader::Product" /* BBLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BBLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"BBLoader::BBLoaderTests::Product" /* BBLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = BBLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF608756246EDCB30060E820 /* iOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF608758246EDCB30060E820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +78,11 @@
 		EF608772246EF8970060E820 /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
 		EF608775246EF8C40060E820 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		EF608778246EFADF0060E820 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF6529732508D110007E4969 /* BBAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBAnimatable.swift; sourceTree = "<group>"; };
+		EF6529752508D141007E4969 /* BBAnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBAnimationType.swift; sourceTree = "<group>"; };
+		EF6529772508D18D007E4969 /* BBAnimatedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBAnimatedLoader.swift; sourceTree = "<group>"; };
+		EF6529792508D1B8007E4969 /* BBQuadRotatingSquaresToCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBQuadRotatingSquaresToCircles.swift; sourceTree = "<group>"; };
+		EF65297B2508D202007E4969 /* BBRotatingAnimatingCubesHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBRotatingAnimatingCubesHelpers.swift; sourceTree = "<group>"; };
 		EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderHelpers.swift; sourceTree = "<group>"; };
 		EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderPresentable.swift; sourceTree = "<group>"; };
 		OBJ_12 /* BBLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderTests.swift; sourceTree = "<group>"; };
@@ -86,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF652972250810C1007E4969 /* BBLayoutKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +107,7 @@
 			buildActionMask = 0;
 			files = (
 				EF65294C2504DA0F007E4969 /* BBAlert in Frameworks */,
+				EF65296F2508107B007E4969 /* BBLayoutKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +187,49 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		EF652970250810C1007E4969 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF65297F2508EBB7007E4969 /* BBQuadRotatingSquaresToCircles */ = {
+			isa = PBXGroup;
+			children = (
+				EF6529792508D1B8007E4969 /* BBQuadRotatingSquaresToCircles.swift */,
+				EF65297B2508D202007E4969 /* BBRotatingAnimatingCubesHelpers.swift */,
+			);
+			path = BBQuadRotatingSquaresToCircles;
+			sourceTree = "<group>";
+		};
+		EF6529802508EBD6007E4969 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* BBLoader.swift */,
+				EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EF6529812508EBE9007E4969 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */,
+				EF6529732508D110007E4969 /* BBAnimatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EF6529822508EC10007E4969 /* BBAnimatedLoader */ = {
+			isa = PBXGroup;
+			children = (
+				EF6529752508D141007E4969 /* BBAnimationType.swift */,
+				EF6529772508D18D007E4969 /* BBAnimatedLoader.swift */,
+			);
+			path = BBAnimatedLoader;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +268,7 @@
 				OBJ_14 /* Products */,
 				OBJ_17 /* BBLoader */,
 				OBJ_18 /* README.md */,
+				EF652970250810C1007E4969 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,9 +283,10 @@
 		OBJ_8 /* BBLoader */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* BBLoader.swift */,
-				EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */,
-				EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */,
+				EF6529802508EBD6007E4969 /* Main */,
+				EF6529822508EC10007E4969 /* BBAnimatedLoader */,
+				EF6529812508EBE9007E4969 /* Protocols */,
+				EF65297F2508EBB7007E4969 /* BBQuadRotatingSquaresToCircles */,
 			);
 			name = BBLoader;
 			path = Sources/BBLoader;
@@ -250,6 +309,7 @@
 			name = BBLoader;
 			packageProductDependencies = (
 				EF65294B2504DA0F007E4969 /* BBAlert */,
+				EF65296E2508107B007E4969 /* BBLayoutKit */,
 			);
 			productName = BBLoader;
 			productReference = "BBLoader::BBLoader::Product" /* BBLoader.framework */;
@@ -299,6 +359,9 @@
 			dependencies = (
 			);
 			name = iOSExample;
+			packageProductDependencies = (
+				EF652971250810C1007E4969 /* BBLayoutKit */,
+			);
 			productName = iOSExample;
 			productReference = EF608756246EDCB30060E820 /* iOSExample.app */;
 			productType = "com.apple.product-type.application";
@@ -331,6 +394,7 @@
 			mainGroup = OBJ_5;
 			packageReferences = (
 				EF65294A2504DA0F007E4969 /* XCRemoteSwiftPackageReference "BBAlert" */,
+				EF65296D2508107B007E4969 /* XCRemoteSwiftPackageReference "BBLayoutKit" */,
 			);
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
@@ -377,8 +441,13 @@
 			buildActionMask = 0;
 			files = (
 				EFC22435246E99B1007830D4 /* BBLoaderPresentable.swift in Sources */,
+				EF65297C2508D202007E4969 /* BBRotatingAnimatingCubesHelpers.swift in Sources */,
+				EF65297A2508D1B8007E4969 /* BBQuadRotatingSquaresToCircles.swift in Sources */,
+				EF6529782508D18D007E4969 /* BBAnimatedLoader.swift in Sources */,
 				EFC22433246E995F007830D4 /* BBLoaderHelpers.swift in Sources */,
 				OBJ_24 /* BBLoader.swift in Sources */,
+				EF6529762508D141007E4969 /* BBAnimationType.swift in Sources */,
+				EF6529742508D110007E4969 /* BBAnimatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +620,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BBLoader.xcodeproj/BBLoader_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
@@ -582,7 +651,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BBLoader.xcodeproj/BBLoader_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
@@ -864,6 +933,14 @@
 				kind = branch;
 			};
 		};
+		EF65296D2508107B007E4969 /* XCRemoteSwiftPackageReference "BBLayoutKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bibinjacobpulickal/BBLayoutKit";
+			requirement = {
+				branch = BBKit/BBLoader;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -871,6 +948,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EF65294A2504DA0F007E4969 /* XCRemoteSwiftPackageReference "BBAlert" */;
 			productName = BBAlert;
+		};
+		EF65296E2508107B007E4969 /* BBLayoutKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF65296D2508107B007E4969 /* XCRemoteSwiftPackageReference "BBLayoutKit" */;
+			productName = BBLayoutKit;
+		};
+		EF652971250810C1007E4969 /* BBLayoutKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF65296D2508107B007E4969 /* XCRemoteSwiftPackageReference "BBLayoutKit" */;
+			productName = BBLayoutKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
