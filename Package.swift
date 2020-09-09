@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-         .package(url: "https://github.com/bibinjacobpulickal/BBLayoutKit", .branch("BBKit/BBLoader")),
+         .package(url: "https://github.com/bibinjacobpulickal/BBAlert.git", .branch("BBKit/BBLoader")),
          .package(url: "https://github.com/bibinjacobpulickal/BBLayoutKit.git", .branch("BBKit/BBLoader"))
     ],
     targets: [
