@@ -23,8 +23,8 @@ let package = Package(
             name: "BBLoader",
             dependencies: [
                 // Dependencies declare other packages that this package depends on.
-                 .package(url: "https://github.com/bibinjacobpulickal/BBAlert.git", .branch("BBKit/BBLoader")),
-                 .package(url: "https://github.com/bibinjacobpulickal/BBLayoutKit.git", .branch("BBKit/BBLoader"))
+                .product(name: "BBAlert"),
+                .product(name: "BBLayoutKit")
             ]),
         .testTarget(
             name: "BBLoaderTests",
