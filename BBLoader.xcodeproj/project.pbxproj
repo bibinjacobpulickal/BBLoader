@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		EF1337622509EEF000D5B8E5 /* BBAlert in Frameworks */ = {isa = PBXBuildFile; productRef = EF1337612509EEF000D5B8E5 /* BBAlert */; };
+		EF1337652509EF0B00D5B8E5 /* BBLayoutKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF1337642509EF0B00D5B8E5 /* BBLayoutKit */; };
 		EF608759246EDCB30060E820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF608758246EDCB30060E820 /* AppDelegate.swift */; };
 		EF60875B246EDCB30060E820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF60875A246EDCB30060E820 /* SceneDelegate.swift */; };
 		EF60875D246EDCB30060E820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF60875C246EDCB30060E820 /* ViewController.swift */; };
@@ -37,8 +39,6 @@
 		EF65297C2508D202007E4969 /* BBRotatingAnimatingCubesHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65297B2508D202007E4969 /* BBRotatingAnimatingCubesHelpers.swift */; };
 		EFC22433246E995F007830D4 /* BBLoaderHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */; };
 		EFC22435246E99B1007830D4 /* BBLoaderPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */; };
-		EFFE46FB2509029D00F5FBA5 /* BBAlert in Frameworks */ = {isa = PBXBuildFile; productRef = EFFE46FA2509029D00F5FBA5 /* BBAlert */; };
-		EFFE47012509034C00F5FBA5 /* BBLayoutKit in Frameworks */ = {isa = PBXBuildFile; productRef = EFFE47002509034C00F5FBA5 /* BBLayoutKit */; };
 		OBJ_24 /* BBLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BBLoader.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* BBLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* BBLoaderTests.swift */; };
@@ -104,8 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				EFFE46FB2509029D00F5FBA5 /* BBAlert in Frameworks */,
-				EFFE47012509034C00F5FBA5 /* BBLayoutKit in Frameworks */,
+				EF1337622509EEF000D5B8E5 /* BBAlert in Frameworks */,
+				EF1337652509EF0B00D5B8E5 /* BBLayoutKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,13 +303,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				EF6AE2EF25093F6400DAF91B /* PBXTargetDependency */,
-				EF6AE2ED25093F5800DAF91B /* PBXTargetDependency */,
 			);
 			name = BBLoader;
 			packageProductDependencies = (
-				EFFE46FA2509029D00F5FBA5 /* BBAlert */,
-				EFFE47002509034C00F5FBA5 /* BBLayoutKit */,
+				EF1337612509EEF000D5B8E5 /* BBAlert */,
+				EF1337642509EF0B00D5B8E5 /* BBLayoutKit */,
 			);
 			productName = BBLoader;
 			productReference = "BBLoader::BBLoader::Product" /* BBLoader.framework */;
@@ -392,8 +390,8 @@
 			);
 			mainGroup = OBJ_5;
 			packageReferences = (
-				EFFE46F92509029D00F5FBA5 /* XCRemoteSwiftPackageReference "BBAlert" */,
-				EFFE46FF2509034C00F5FBA5 /* XCRemoteSwiftPackageReference "BBLayoutKit" */,
+				EF1337602509EEF000D5B8E5 /* XCRemoteSwiftPackageReference "BBAlert" */,
+				EF1337632509EF0B00D5B8E5 /* XCRemoteSwiftPackageReference "BBLayoutKit" */,
 			);
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
@@ -470,14 +468,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EF6AE2ED25093F5800DAF91B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = EF6AE2EC25093F5800DAF91B /* BBLayoutKit */;
-		};
-		EF6AE2EF25093F6400DAF91B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = EF6AE2EE25093F6400DAF91B /* BBAlert */;
-		};
 		OBJ_36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "BBLoader::BBLoaderTests" /* BBLoaderTests */;
@@ -932,43 +922,33 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EFFE46F92509029D00F5FBA5 /* XCRemoteSwiftPackageReference "BBAlert" */ = {
+		EF1337602509EEF000D5B8E5 /* XCRemoteSwiftPackageReference "BBAlert" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bibinjacobpulickal/BBAlert.git";
 			requirement = {
-				branch = BBKit/BBLoader;
+				branch = master;
 				kind = branch;
 			};
 		};
-		EFFE46FF2509034C00F5FBA5 /* XCRemoteSwiftPackageReference "BBLayoutKit" */ = {
+		EF1337632509EF0B00D5B8E5 /* XCRemoteSwiftPackageReference "BBLayoutKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bibinjacobpulickal/BBLayoutKit.git";
 			requirement = {
-				branch = BBKit/BBLoader;
+				branch = master;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EF6AE2EC25093F5800DAF91B /* BBLayoutKit */ = {
+		EF1337612509EEF000D5B8E5 /* BBAlert */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EFFE46FF2509034C00F5FBA5 /* XCRemoteSwiftPackageReference "BBLayoutKit" */;
-			productName = BBLayoutKit;
-		};
-		EF6AE2EE25093F6400DAF91B /* BBAlert */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EFFE46F92509029D00F5FBA5 /* XCRemoteSwiftPackageReference "BBAlert" */;
+			package = EF1337602509EEF000D5B8E5 /* XCRemoteSwiftPackageReference "BBAlert" */;
 			productName = BBAlert;
 		};
-		EFFE46FA2509029D00F5FBA5 /* BBAlert */ = {
+		EF1337642509EF0B00D5B8E5 /* BBLayoutKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EFFE46F92509029D00F5FBA5 /* XCRemoteSwiftPackageReference "BBAlert" */;
-			productName = BBAlert;
-		};
-		EFFE47002509034C00F5FBA5 /* BBLayoutKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EFFE46FF2509034C00F5FBA5 /* XCRemoteSwiftPackageReference "BBLayoutKit" */;
+			package = EF1337632509EF0B00D5B8E5 /* XCRemoteSwiftPackageReference "BBLayoutKit" */;
 			productName = BBLayoutKit;
 		};
 /* End XCSwiftPackageProductDependency section */
