@@ -21,7 +21,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "BBLoader",
-            dependencies: []),
+            dependencies: [
+                // Dependencies declare other packages that this package depends on.
+                 .package(url: "https://github.com/bibinjacobpulickal/BBAlert.git", .branch("BBKit/BBLoader")),
+                 .package(url: "https://github.com/bibinjacobpulickal/BBLayoutKit.git", .branch("BBKit/BBLoader"))
+            ]),
         .testTarget(
             name: "BBLoaderTests",
             dependencies: ["BBLoader"]),

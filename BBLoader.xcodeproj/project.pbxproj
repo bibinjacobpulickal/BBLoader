@@ -926,7 +926,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bibinjacobpulickal/BBAlert.git";
 			requirement = {
-				branch = master;
+				branch = BBKit/BBLoader;
 				kind = branch;
 			};
 		};
@@ -934,7 +934,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bibinjacobpulickal/BBLayoutKit.git";
 			requirement = {
-				branch = master;
+				branch = BBKit/BBLoader;
 				kind = branch;
 			};
 		};
