@@ -13,8 +13,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-         .package(url: "https://github.com/bibinjacobpulickal/BBAlert.git", .branch("BBKit/BBLoader")),
-         .package(url: "https://github.com/bibinjacobpulickal/BBLayoutKit.git", .branch("BBKit/BBLoader"))
+         .package(url: "https://github.com/bibinjacobpulickal/BBAlert.git", .branch("BBKit/BBLoader"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.

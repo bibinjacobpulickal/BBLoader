@@ -23,11 +23,8 @@
 //
 
 import UIKit
-import BBAlert
 
-public typealias BBLoaderPresentable = BBAlertPresentable
-
-public extension BBLoaderPresentable {
+public extension UIViewController {
 
     func presentBBLoader(duration: Double                   = 0,
                          setup: ((BBLoader) -> Void)?       = nil,
@@ -37,7 +34,7 @@ public extension BBLoaderPresentable {
                               message: "Please wait...")
         setup?(loader)
 
-        present(loader) {
+        present(loader, animated: true) {
             completion?(loader)
             self.handleDismissal(loader, after: duration)
         }
@@ -51,17 +48,17 @@ public extension BBLoaderPresentable {
         let animatedLoader = BBAnimatedLoader(type: type)
         setup?(animatedLoader.loadable)
 
-        present(animatedLoader) {
+        present(animatedLoader, animated: true) {
             completion?()
             self.handleDismissal(animatedLoader, after: duration)
         }
     }
 
-    private func handleDismissal(_ loader: BBAlertDismissible,
+    private func handleDismissal(_ loader: UIViewController,
                                  after duration: Double) -> Void {
         if !duration.isZero {
             DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
-                loader.dismiss()
+                loader.dismiss(animated: true)
             }
         }
     }
