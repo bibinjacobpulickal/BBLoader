@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		EF13376E250A31A200D5B8E5 /* BBAlert in Frameworks */ = {isa = PBXBuildFile; productRef = EF13376D250A31A200D5B8E5 /* BBAlert */; };
 		EF19831F247494D000EFBC69 /* BBAlert in Frameworks */ = {isa = PBXBuildFile; productRef = EF19831E247494D000EFBC69 /* BBAlert */; };
 		EF608759246EDCB30060E820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF608758246EDCB30060E820 /* AppDelegate.swift */; };
 		EF60875B246EDCB30060E820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF60875A246EDCB30060E820 /* SceneDelegate.swift */; };
@@ -86,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF13376E250A31A200D5B8E5 /* BBAlert in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +110,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF13376C250A31A200D5B8E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF608757246EDCB30060E820 /* iOSExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +220,7 @@
 				OBJ_14 /* Products */,
 				OBJ_17 /* BBLoader */,
 				OBJ_18 /* README.md */,
+				EF13376C250A31A200D5B8E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,6 +309,9 @@
 			dependencies = (
 			);
 			name = iOSExample;
+			packageProductDependencies = (
+				EF13376D250A31A200D5B8E5 /* BBAlert */,
+			);
 			productName = iOSExample;
 			productReference = EF608756246EDCB30060E820 /* iOSExample.app */;
 			productType = "com.apple.product-type.application";
@@ -867,6 +880,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EF13376D250A31A200D5B8E5 /* BBAlert */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF19831D247494D000EFBC69 /* XCRemoteSwiftPackageReference "BBAlert" */;
+			productName = BBAlert;
+		};
 		EF19831E247494D000EFBC69 /* BBAlert */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EF19831D247494D000EFBC69 /* XCRemoteSwiftPackageReference "BBAlert" */;
