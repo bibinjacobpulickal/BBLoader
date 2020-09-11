@@ -128,7 +128,7 @@ extension BBQuadRotatingSquaresToCircles: BBAnimatable {
             $1.animatePosition(point: CGPoint(x: $0.midX, y: $0.midY), duration: animationCycleDuration)
         }
 
-        layer.rotationAnimation(angles: [startAngle, endAngle, startAngle, endAngle, startAngle], duration: animationCycleDuration * 4)
+        layer.rotationAnimation(angles: [startAngle, -endAngle, startAngle, endAngle, startAngle], duration: animationCycleDuration * 4)
     }
 
     public func stopAnimating() {
