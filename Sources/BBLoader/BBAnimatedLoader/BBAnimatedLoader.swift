@@ -23,7 +23,6 @@
 //
 
 import UIKit
-import BBLayoutKit
 
 public class BBAnimatedLoader: UIViewController {
 
@@ -55,8 +54,12 @@ public class BBAnimatedLoader: UIViewController {
 
     private func setupAnimatingViewConstraints() {
         guard let animatingView = loadable as? UIView else { return }
-        view.addSubview(animatingView) {
-            $0.centers == $1.centers
-        }
+        view.addSubview(animatingView)
+        animatingView.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            animatingView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            animatingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
     }
 }

@@ -23,10 +23,8 @@
 //
 
 import UIKit
-import BBAlert
-import BBLayoutKit
 
-public typealias BBLoader = BBAlert
+public typealias BBLoader = UIAlertController
 
 public extension BBLoader {
 
@@ -48,9 +46,12 @@ public extension BBLoader {
 
         loadingIndicator.startAnimating()
 
-        view.addSubview(loadingIndicator) {
-            $0.leading == $1.leading + 24
-            $0.centerY == $1.centerY
-        }
+        view.addSubview(loadingIndicator)
+        loadingIndicator.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            loadingIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            loadingIndicator.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24)
+        ])
     }
 }

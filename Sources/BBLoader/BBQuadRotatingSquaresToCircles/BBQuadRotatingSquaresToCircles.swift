@@ -23,7 +23,6 @@
 //
 
 import UIKit
-import BBLayoutKit
 
 public class BBQuadRotatingSquaresToCircles: UIView {
 
@@ -106,8 +105,10 @@ extension BBQuadRotatingSquaresToCircles: BBAnimatable {
     public func startAnimating() {
 
         guard let superview = superview else { return }
-        width  == superview.width / 2
-        height == width
+        NSLayoutConstraint.activate([
+            widthAnchor.constraint(equalTo: superview.widthAnchor, multiplier: 0.5),
+            heightAnchor.constraint(equalTo: widthAnchor)
+        ])
 
         superview.layoutIfNeeded()
 
