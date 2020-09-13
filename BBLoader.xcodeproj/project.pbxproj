@@ -37,6 +37,8 @@
 		EF6529782508D18D007E4969 /* BBAnimatedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6529772508D18D007E4969 /* BBAnimatedLoader.swift */; };
 		EF65297A2508D1B8007E4969 /* BBQuadRotatingSquaresToCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6529792508D1B8007E4969 /* BBQuadRotatingSquaresToCircles.swift */; };
 		EF65297C2508D202007E4969 /* BBRotatingAnimatingCubesHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65297B2508D202007E4969 /* BBRotatingAnimatingCubesHelpers.swift */; };
+		EFA3E5B5250E6E4A0006343D /* AnimatedLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3E5B4250E6E4A0006343D /* AnimatedLoaderViewController.swift */; };
+		EFA3E5B7250E6E750006343D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3E5B6250E6E750006343D /* TabBarController.swift */; };
 		EFC22433246E995F007830D4 /* BBLoaderHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */; };
 		EFC22435246E99B1007830D4 /* BBLoaderPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */; };
 		OBJ_24 /* BBLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BBLoader.swift */; };
@@ -82,6 +84,8 @@
 		EF6529772508D18D007E4969 /* BBAnimatedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBAnimatedLoader.swift; sourceTree = "<group>"; };
 		EF6529792508D1B8007E4969 /* BBQuadRotatingSquaresToCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBQuadRotatingSquaresToCircles.swift; sourceTree = "<group>"; };
 		EF65297B2508D202007E4969 /* BBRotatingAnimatingCubesHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBRotatingAnimatingCubesHelpers.swift; sourceTree = "<group>"; };
+		EFA3E5B4250E6E4A0006343D /* AnimatedLoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedLoaderViewController.swift; sourceTree = "<group>"; };
+		EFA3E5B6250E6E750006343D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderHelpers.swift; sourceTree = "<group>"; };
 		EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderPresentable.swift; sourceTree = "<group>"; };
 		OBJ_12 /* BBLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderTests.swift; sourceTree = "<group>"; };
@@ -146,7 +150,9 @@
 		EF60876B246EF8340060E820 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EFA3E5B6250E6E750006343D /* TabBarController.swift */,
 				EF60875C246EDCB30060E820 /* ViewController.swift */,
+				EFA3E5B4250E6E4A0006343D /* AnimatedLoaderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -425,9 +431,11 @@
 				EF60875D246EDCB30060E820 /* ViewController.swift in Sources */,
 				EF608776246EF8C40060E820 /* Helpers.swift in Sources */,
 				EF60876E246EF8620060E820 /* Section.swift in Sources */,
+				EFA3E5B7250E6E750006343D /* TabBarController.swift in Sources */,
 				EF608759246EDCB30060E820 /* AppDelegate.swift in Sources */,
 				EF608770246EF8790060E820 /* Color.swift in Sources */,
 				EF60875B246EDCB30060E820 /* SceneDelegate.swift in Sources */,
+				EFA3E5B5250E6E4A0006343D /* AnimatedLoaderViewController.swift in Sources */,
 				EF608773246EF8970060E820 /* TextFieldCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
