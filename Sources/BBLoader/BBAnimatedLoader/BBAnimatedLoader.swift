@@ -37,6 +37,8 @@ public class BBAnimatedLoader: UIViewController {
             loadable = UIActivityIndicatorView(style: .whiteLarge)
         }
         super.init(nibName: nil, bundle: nil)
+        self.modalPresentationStyle = .overCurrentContext
+        self.view.backgroundColor = UIColor.gray.withAlphaComponent(0.25)
     }
 
     @available(*, unavailable)
@@ -47,7 +49,6 @@ public class BBAnimatedLoader: UIViewController {
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        modalPresentationStyle = .fullScreen
         setupAnimatingViewConstraints()
         loadable.startAnimating()
     }
