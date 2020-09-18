@@ -29,6 +29,12 @@ public class BBQuadRotatingSquaresToCircles: UIView {
     /// Animation cycle duration.
     public var animationCycleDuration = 1.0
 
+    /// Animating shape size, by default size determined by ratio of width. Defaults to zero.
+    public var animationSize = CGSize.zero
+
+    /// Animating shape size is determined with respect the ratio to width of presenting view.
+    public var sizeWidthMultiplier: CGFloat = 0.5
+
     /// Single colour to be used for all the animating shapes.
     public var animatingColor = #colorLiteral(red: 0.5502940416, green: 0.8689419627, blue: 0.9688422084, alpha: 1) {
         didSet {
@@ -105,10 +111,17 @@ extension BBQuadRotatingSquaresToCircles: BBAnimatable {
     public func startAnimating() {
 
         guard let superview = superview else { return }
-        NSLayoutConstraint.activate([
-            widthAnchor.constraint(equalTo: superview.widthAnchor, multiplier: 0.5),
-            heightAnchor.constraint(equalTo: widthAnchor)
-        ])
+        if animationSize == .zero {
+            NSLayoutConstraint.activate([
+                widthAnchor.constraint(equalTo: superview.widthAnchor, multiplier: sizeWidthMultiplier),
+                heightAnchor.constraint(equalTo: widthAnchor)
+            ])
+        } else {
+            NSLayoutConstraint.activate([
+                widthAnchor.constraint(equalToConstant: animationSize.width),
+                heightAnchor.constraint(equalToConstant: animationSize.height)
+            ])
+        }
 
         superview.layoutIfNeeded()
 
