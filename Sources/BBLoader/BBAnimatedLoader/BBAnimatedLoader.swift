@@ -33,8 +33,8 @@ public class BBAnimatedLoader: UIViewController {
         switch type {
         case .quadRotatingSquaresToCircles:
             loadable = BBQuadRotatingSquaresToCircles()
-        case .androidSpinner:
-            loadable = BBAndroidSpinnerView()
+        case .MultichromeSpinner:
+            loadable = BBMultichromeSpinnerView()
         case .default:
             loadable = UIActivityIndicatorView(style: .whiteLarge)
         }

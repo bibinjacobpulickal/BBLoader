@@ -41,7 +41,7 @@
 		EFA3E5B7250E6E750006343D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3E5B6250E6E750006343D /* TabBarController.swift */; };
 		EFC22433246E995F007830D4 /* BBLoaderHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */; };
 		EFC22435246E99B1007830D4 /* BBLoaderPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */; };
-		EFDF3D492530C1C400C8B4CA /* BBAndroidSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF3D482530C1C400C8B4CA /* BBAndroidSpinnerView.swift */; };
+		EFDF3D492530C1C400C8B4CA /* BBMultichromeSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF3D482530C1C400C8B4CA /* BBMultichromeSpinnerView.swift */; };
 		OBJ_24 /* BBLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BBLoader.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* BBLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* BBLoaderTests.swift */; };
@@ -89,7 +89,7 @@
 		EFA3E5B6250E6E750006343D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderHelpers.swift; sourceTree = "<group>"; };
 		EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderPresentable.swift; sourceTree = "<group>"; };
-		EFDF3D482530C1C400C8B4CA /* BBAndroidSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBAndroidSpinnerView.swift; sourceTree = "<group>"; };
+		EFDF3D482530C1C400C8B4CA /* BBMultichromeSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBMultichromeSpinnerView.swift; sourceTree = "<group>"; };
 		OBJ_12 /* BBLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* BBLoader */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BBLoader; sourceTree = SOURCE_ROOT; };
@@ -239,7 +239,7 @@
 		EFDF3D472530C18200C8B4CA /* BBAndroidSpinnerView */ = {
 			isa = PBXGroup;
 			children = (
-				EFDF3D482530C1C400C8B4CA /* BBAndroidSpinnerView.swift */,
+				EFDF3D482530C1C400C8B4CA /* BBMultichromeSpinnerView.swift */,
 			);
 			path = BBAndroidSpinnerView;
 			sourceTree = "<group>";
@@ -461,7 +461,7 @@
 				EF6529782508D18D007E4969 /* BBAnimatedLoader.swift in Sources */,
 				EFC22433246E995F007830D4 /* BBLoaderHelpers.swift in Sources */,
 				OBJ_24 /* BBLoader.swift in Sources */,
-				EFDF3D492530C1C400C8B4CA /* BBAndroidSpinnerView.swift in Sources */,
+				EFDF3D492530C1C400C8B4CA /* BBMultichromeSpinnerView.swift in Sources */,
 				EF6529762508D141007E4969 /* BBAnimationType.swift in Sources */,
 				EF6529742508D110007E4969 /* BBAnimatable.swift in Sources */,
 			);

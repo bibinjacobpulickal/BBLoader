@@ -26,6 +26,6 @@ import Foundation
 
 public enum BBAnimationType {
     case `default`
-    case androidSpinner
+    case MultichromeSpinner
     case quadRotatingSquaresToCircles
 }

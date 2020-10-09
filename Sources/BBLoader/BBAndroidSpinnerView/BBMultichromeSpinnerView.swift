@@ -1,5 +1,5 @@
 //
-//  BBAndroidSpinnerView.swift
+//  BBMultichromeSpinnerView.swift
 //
 //  Copyright © 2020 Bibin Jacob Pulickal (https://github.com/bibinjacobpulickal)
 //
@@ -25,10 +25,10 @@
 import UIKit
 
 @IBDesignable
-class BBAndroidSpinnerView: UIView {
+class BBMultichromeSpinnerView: UIView {
 
     /// Animating line width. Defaults to 4.
-    public var lineWidth = 4
+    public var lineWidth = CGFloat(4)
 
     /// Animating shape size, by default size determined by ratio of width. Defaults to zero.
     public var animationSize = CGSize.zero
@@ -89,7 +89,7 @@ class BBAndroidSpinnerView: UIView {
     }
 }
 
-extension BBAndroidSpinnerView: BBAnimatable {
+extension BBMultichromeSpinnerView: BBAnimatable {
 
     func startAnimating() {
 
