@@ -31,12 +31,12 @@ public class BBAnimatedLoader: UIViewController {
     init(type: BBAnimationType) {
 
         switch type {
-        case .quadRotatingSquaresToCircles:
-            loadable = BBQuadRotatingSquaresToCircles()
-        case .multicolorSpinner:
-            loadable = BBMulticolorSpinnerView()
         case .default:
             loadable = UIActivityIndicatorView(style: .whiteLarge)
+        case .multicolorSpinner:
+            loadable = BBMulticolorSpinnerView()
+        case .quadRotatingSquaresToCircles:
+            loadable = BBQuadRotatingSquaresToCircles()
         }
         super.init(nibName: nil, bundle: nil)
         self.modalPresentationStyle = .overCurrentContext

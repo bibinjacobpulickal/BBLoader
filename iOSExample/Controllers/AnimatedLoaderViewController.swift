@@ -30,7 +30,9 @@ class AnimatedLoaderViewController: UITableViewController {
 
     @objc func presentAnimatedLoader() {
         presentBBAnimatedLoader(type: selectedAnimationType.type, duration: 8, setup: { loader in
-            if let loader = loader as? BBQuadRotatingSquaresToCircles {
+            if let loader = loader as? UIActivityIndicatorView {
+                loader.color = .red
+            } else if let loader = loader as? BBQuadRotatingSquaresToCircles {
                 loader.animationCycleDuration = 0.5
                 loader.sizeWidthMultiplier    = 0.4
                 loader.animatingColor         = #colorLiteral(red: 0.5502940416, green: 0.8689419627, blue: 0.9688422084, alpha: 1)
