@@ -1,5 +1,5 @@
 //
-//  BBMultichromeSpinnerView.swift
+//  BBMulticolorSpinnerView.swift
 //
 //  Copyright © 2020 Bibin Jacob Pulickal (https://github.com/bibinjacobpulickal)
 //
@@ -25,7 +25,7 @@
 import UIKit
 
 @IBDesignable
-class BBMultichromeSpinnerView: UIView {
+public class BBMulticolorSpinnerView: UIView {
 
     /// Animating line width. Defaults to 4.
     public var lineWidth = CGFloat(4)
@@ -36,17 +36,17 @@ class BBMultichromeSpinnerView: UIView {
     /// Animating shape size is determined with respect the ratio to width of presenting view.
     public var sizeWidthMultiplier: CGFloat = 0.5
 
-    override var layer: CAShapeLayer {
+    public override var layer: CAShapeLayer {
         get {
             return super.layer as! CAShapeLayer
         }
     }
 
-    override class var layerClass: AnyClass {
+    public override class var layerClass: AnyClass {
         return CAShapeLayer.self
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         layer.fillColor = nil
         layer.strokeColor = UIColor.black.cgColor
@@ -54,7 +54,7 @@ class BBMultichromeSpinnerView: UIView {
         setPath()
     }
 
-    override func didMoveToWindow() {
+    public override func didMoveToWindow() {
         startAnimating()
     }
 
@@ -89,9 +89,9 @@ class BBMultichromeSpinnerView: UIView {
     }
 }
 
-extension BBMultichromeSpinnerView: BBAnimatable {
+extension BBMulticolorSpinnerView: BBAnimatable {
 
-    func startAnimating() {
+    public func startAnimating() {
 
         guard let superview = superview else { return }
         if animationSize == .zero {
@@ -156,7 +156,7 @@ extension BBMultichromeSpinnerView: BBAnimatable {
         layer.add(animation, forKey: animation.keyPath)
     }
 
-    func stopAnimating() {
+    public func stopAnimating() {
         removeFromSuperview()
     }
 }

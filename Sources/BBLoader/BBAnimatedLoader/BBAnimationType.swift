@@ -25,7 +25,13 @@
 import Foundation
 
 public enum BBAnimationType {
+
+    /// The default iOS activity indicator loader.
     case `default`
-    case MultichromeSpinner
+
+    /// Android style spinner which animates through different colors.
+    case multicolorSpinner
+
+    /// 4 rotating and revolving squares animating to circles.
     case quadRotatingSquaresToCircles
 }

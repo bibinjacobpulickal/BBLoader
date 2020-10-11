@@ -41,7 +41,8 @@
 		EFA3E5B7250E6E750006343D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3E5B6250E6E750006343D /* TabBarController.swift */; };
 		EFC22433246E995F007830D4 /* BBLoaderHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */; };
 		EFC22435246E99B1007830D4 /* BBLoaderPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */; };
-		EFDF3D492530C1C400C8B4CA /* BBMultichromeSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF3D482530C1C400C8B4CA /* BBMultichromeSpinnerView.swift */; };
+		EFDF3D492530C1C400C8B4CA /* BBMulticolorSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF3D482530C1C400C8B4CA /* BBMulticolorSpinnerView.swift */; };
+		EFDF3D6C2532E1CA00C8B4CA /* BBHelperKit in Frameworks */ = {isa = PBXBuildFile; productRef = EFDF3D6B2532E1CA00C8B4CA /* BBHelperKit */; };
 		OBJ_24 /* BBLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BBLoader.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* BBLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* BBLoaderTests.swift */; };
@@ -89,7 +90,7 @@
 		EFA3E5B6250E6E750006343D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EFC22432246E995F007830D4 /* BBLoaderHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderHelpers.swift; sourceTree = "<group>"; };
 		EFC22434246E99B1007830D4 /* BBLoaderPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderPresentable.swift; sourceTree = "<group>"; };
-		EFDF3D482530C1C400C8B4CA /* BBMultichromeSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBMultichromeSpinnerView.swift; sourceTree = "<group>"; };
+		EFDF3D482530C1C400C8B4CA /* BBMulticolorSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBMulticolorSpinnerView.swift; sourceTree = "<group>"; };
 		OBJ_12 /* BBLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBLoaderTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* BBLoader */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BBLoader; sourceTree = SOURCE_ROOT; };
@@ -104,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF133778250A338700D5B8E5 /* BBAlert in Frameworks */,
+				EFDF3D6C2532E1CA00C8B4CA /* BBHelperKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,12 +238,12 @@
 			path = BBAnimatedLoader;
 			sourceTree = "<group>";
 		};
-		EFDF3D472530C18200C8B4CA /* BBAndroidSpinnerView */ = {
+		EFDF3D472530C18200C8B4CA /* BBMulticolorSpinnerView */ = {
 			isa = PBXGroup;
 			children = (
-				EFDF3D482530C1C400C8B4CA /* BBMultichromeSpinnerView.swift */,
+				EFDF3D482530C1C400C8B4CA /* BBMulticolorSpinnerView.swift */,
 			);
-			path = BBAndroidSpinnerView;
+			path = BBMulticolorSpinnerView;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Tests */ = {
@@ -301,7 +303,7 @@
 				EF6529822508EC10007E4969 /* BBAnimatedLoader */,
 				EF6529812508EBE9007E4969 /* Protocols */,
 				EF65297F2508EBB7007E4969 /* BBQuadRotatingSquaresToCircles */,
-				EFDF3D472530C18200C8B4CA /* BBAndroidSpinnerView */,
+				EFDF3D472530C18200C8B4CA /* BBMulticolorSpinnerView */,
 			);
 			name = BBLoader;
 			path = Sources/BBLoader;
@@ -375,6 +377,7 @@
 			name = iOSExample;
 			packageProductDependencies = (
 				EF133777250A338700D5B8E5 /* BBAlert */,
+				EFDF3D6B2532E1CA00C8B4CA /* BBHelperKit */,
 			);
 			productName = iOSExample;
 			productReference = EF608756246EDCB30060E820 /* iOSExample.app */;
@@ -408,6 +411,7 @@
 			mainGroup = OBJ_5;
 			packageReferences = (
 				EF133774250A337600D5B8E5 /* XCRemoteSwiftPackageReference "BBAlert" */,
+				EFDF3D632532E19700C8B4CA /* XCRemoteSwiftPackageReference "BBHelperKit" */,
 			);
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
@@ -461,7 +465,7 @@
 				EF6529782508D18D007E4969 /* BBAnimatedLoader.swift in Sources */,
 				EFC22433246E995F007830D4 /* BBLoaderHelpers.swift in Sources */,
 				OBJ_24 /* BBLoader.swift in Sources */,
-				EFDF3D492530C1C400C8B4CA /* BBMultichromeSpinnerView.swift in Sources */,
+				EFDF3D492530C1C400C8B4CA /* BBMulticolorSpinnerView.swift in Sources */,
 				EF6529762508D141007E4969 /* BBAnimationType.swift in Sources */,
 				EF6529742508D110007E4969 /* BBAnimatable.swift in Sources */,
 			);
@@ -951,6 +955,14 @@
 				kind = branch;
 			};
 		};
+		EFDF3D632532E19700C8B4CA /* XCRemoteSwiftPackageReference "BBHelperKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bibinjacobpulickal/BBHelperKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.11;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -963,6 +975,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EF133774250A337600D5B8E5 /* XCRemoteSwiftPackageReference "BBAlert" */;
 			productName = BBAlert;
+		};
+		EFDF3D6B2532E1CA00C8B4CA /* BBHelperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFDF3D632532E19700C8B4CA /* XCRemoteSwiftPackageReference "BBHelperKit" */;
+			productName = BBHelperKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
