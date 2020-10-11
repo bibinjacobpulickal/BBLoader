@@ -23,8 +23,8 @@ class ViewController: UITableViewController {
         super.loadView()
 
         tableView = UITableView(frame: tableView.frame, style: .insetGrouped)
-        tableView.register(TextFieldCell.self, forCellReuseIdentifier: TextFieldCell.identifier)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.identifier)
+        tableView.register(TextFieldCell.self)
+        tableView.register(UITableViewCell.self)
     }
 
     override func viewDidLoad() {

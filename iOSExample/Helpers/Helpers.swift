@@ -25,4 +25,8 @@ extension String {
             return $0 + String($1)
         }
     }
+    
+    var capitalizeFirstLetter: String {
+        return prefix(1).capitalized + dropFirst()
+    }
 }
