@@ -39,14 +39,14 @@ class ViewController: UIViewController {
 
 <table>
   <tr>
-    <td>Animation</td>
-     <td>Dark mode</td>
-     <td>Light mode</td>
+    <td>Simple</td>
+     <td>Multi-color Spinner</td>
+     <td>Quad-Rotating Squares To Circles</td>
   </tr>
   <tr>
     <td><img src="Screenshots/BBLoader.gif" width=300 height=600></td>
-    <td><img src="Screenshots/BBLoaderDark.png" width=300 height=600></td>
-    <td><img src="Screenshots/BBLoaderLight.png" width=300 height=600></td>
+    <td><img src="Screenshots/BBMulticolorSpinner.gif" width=300 height=600></td>
+    <td><img src="Screenshots/BBQuadRotatingSquaresToCircles.gif" width=300 height=600></td>
   </tr>
  </table>
 
